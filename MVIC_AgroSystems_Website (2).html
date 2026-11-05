@@ -22,11 +22,11 @@
 <a class="btn mobile-cta" href="#book">Book incubation</a>
 <script>
 // BEFORE PUBLISHING: replace the placeholder below with your WhatsApp number in international format, digits only.
-const BUSINESS_WHATSAPP = '2348000000000';
+const BUSINESS_WHATSAPP = '08088362322';
 document.getElementById('year').textContent=new Date().getFullYear();
 const dateInput=document.getElementById('date');const today=new Date();dateInput.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
 document.getElementById('bookingForm').addEventListener('submit',function(e){e.preventDefault();const data=new FormData(e.currentTarget);const message=[
 'Hello MVIC Hatchery, I would like to book egg incubation.',
 '',`Name: ${data.get('name')}`,`Phone: ${data.get('phone')}`,`Poultry type: ${data.get('type')}`,`Number of eggs: ${data.get('eggs')}`,`Preferred drop-off date: ${data.get('date')}`,`Extra details: ${data.get('notes')||'None'}`,'','Please confirm availability, service fee and drop-off/collection details.'
-].join('\n');const notice=document.getElementById('notice');if(BUSINESS_WHATSAPP==='2348000000000'){notice.style.display='block';notice.textContent='The form is ready, but the business WhatsApp number is still a placeholder. Replace BUSINESS_WHATSAPP in this file with your number (digits only, e.g. 23480XXXXXXXX) before using live bookings.';return;}window.open('https://wa.me/'+BUSINESS_WHATSAPP+'?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');notice.style.display='block';notice.textContent='WhatsApp opened with your booking details. Send the message to complete your request.';});
+].join('\n');const notice=document.getElementById('notice');if(BUSINESS_WHATSAPP==='08088362322'){notice.style.display='block';notice.textContent='The form is ready, but the business WhatsApp number is still a placeholder. Replace BUSINESS_WHATSAPP in this file with your number (digits only, e.g. 23480XXXXXXXX) before using live bookings.';return;}window.open('https://wa.me/'+BUSINESS_WHATSAPP+'?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');notice.style.display='block';notice.textContent='WhatsApp opened with your booking details. Send the message to complete your request.';});
 </script></body></html>
